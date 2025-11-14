@@ -21,7 +21,7 @@ jobs:
 
       - name : Run application
         run: |
-          python src/app.py 52.95.110.1
+          python src/use.py 52.95.110.1
 
       - name: Lint with fake8
         run : |
