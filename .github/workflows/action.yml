@@ -23,14 +23,15 @@ jobs:
         run: |
           python src/use.py 52.95.110.1
 
-      - name: Lint with fake8
-        run : |
-          flake8 /test
-
       - name: Run nosetests
         run: |
           pip install nose
-          nosetests test/
+          nosetests /test
+
+      - name: Lint with flake8
+        run : |
+          flake8 /test
+
       
     
     
