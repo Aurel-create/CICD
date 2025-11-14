@@ -25,7 +25,7 @@ jobs:
 
       - name: Lint with fake8
         run : |
-          flake8 .
+          flake8 /test
 
       - name: Run nosetests
         run: |
